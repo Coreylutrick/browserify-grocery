@@ -1,1 +1,3 @@
-console.log('poop');
+const data = require('./data');
+
+data.initializer();
