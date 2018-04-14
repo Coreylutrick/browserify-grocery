@@ -15,10 +15,10 @@ const domString = (departments) =>
   return strang;
 };
 
-const printToDom = (DepArray) =>
+const printDepartmentToDom = (DepArray) =>
 {
   outPutDiv.innerHTML = domString(DepArray);
   events.addDepartmentEvents();
 };
 
-module.exports = printToDom;
+module.exports = printDepartmentToDom;
