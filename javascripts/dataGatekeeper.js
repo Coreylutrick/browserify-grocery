@@ -1,12 +1,13 @@
 const loadDepartments = require('./departments');
-
 const printDepartmentToDom = require('./departmentdom');
+const data = require('./data');
 
 const depArray = [];
 
 const whenDepsLoad = function ()
 {
   const depArray = JSON.parse(this.responseText).departments;
+  data.setDepartments(depArray);
   printDepartmentToDom(depArray);
 };
 
