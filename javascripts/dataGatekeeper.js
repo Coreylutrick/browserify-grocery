@@ -6,7 +6,7 @@ const loadItems = require('./items');
 const whenItemsLoad = function ()
 {
   const itemsData = JSON.parse(this.responseText).items;
-  console.log(itemsData);
+  data.setItems(itemsData);
 };
 
 const depArray = [];

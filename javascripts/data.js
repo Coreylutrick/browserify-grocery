@@ -1,5 +1,5 @@
 let departments = [];
-// let items = [];
+let items = [];
 
 const getDepartments = () =>
 {
@@ -11,8 +11,20 @@ const setDepartments = (depArray) =>
   departments = depArray;
 };
 
+const setItems = (itemsArray) =>
+{
+  items = itemsArray;
+};
+
+const getItems = () =>
+{
+  return items;
+};
+
 module.exports =
 {
   getDepartments,
   setDepartments,
+  getItems,
+  setItems,
 };
