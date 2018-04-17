@@ -1,6 +1,13 @@
 const loadDepartments = require('./departments');
 const printDepartmentToDom = require('./departmentdom');
 const data = require('./data');
+const loadItems = require('./items');
+
+const whenItemsLoad = function ()
+{
+  const itemsData = JSON.parse(this.responseText).items;
+  data.setItems(itemsData);
+};
 
 const depArray = [];
 
@@ -19,6 +26,7 @@ const badDeps = function ()
 const initializer = () =>
 {
   loadDepartments(whenDepsLoad, badDeps);
+  loadItems(whenItemsLoad, badDeps);
 };
 
 const getDeps = () =>
