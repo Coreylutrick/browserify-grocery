@@ -21,3 +21,12 @@ body {
   top: 150px;
   font-size: 50px;
 }
+
+.itemImg{
+  height: 100px;
+  width: 100px;
+}
+
+.item .panel{
+  height: 200px;
+}
