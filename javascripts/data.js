@@ -44,6 +44,7 @@ const setCart = (itemId, numberToAdd) =>
   const newItem = items[itemPosition];
   newItem.purchaseNum = numberToAdd;
   cart.push(newItem);
+  console.log(cart);
 };
 
 module.exports =
