@@ -4,6 +4,7 @@ const itemsDiv = document.getElementById('items');
 const cartDiv = document.getElementById('cart');
 const data = require('./dataGatekeeper');
 const goToCart = document.getElementById('go-to-cart');
+const cartDom = require('./cartDom');
 
 const cartButton = () =>
 {
@@ -12,6 +13,7 @@ const cartButton = () =>
     departmentsDiv.innerHTML = '';
     itemsDiv.innerHTML = '';
     cartDiv.innerHTML = '';
+    cartDom();
   });
 };
 
